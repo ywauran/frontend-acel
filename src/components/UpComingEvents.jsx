@@ -66,10 +66,10 @@ const UpComingEvents = () => {
   ];
   return (
     <div>
-      <h3 className="text-3xl font-bold text-center my-5">
+      <h3 className="my-5 text-3xl font-bold text-center">
         Kegiatan yang akan Diselenggarkan
       </h3>
-      <div className="grid grid-cols-5 place-content-center gap-5 place-items-center p-4">
+      <div className="grid grid-cols-1 gap-5 p-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 auto-cols-max place-content-center place-items-center">
         {data.map((item, index) => (
           <Event
             key={index + 1}

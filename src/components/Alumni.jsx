@@ -3,17 +3,16 @@ import PlaceholderImage from "../assets/images.png";
 
 const Alumni = ({ name, email, course, batch }) => {
   return (
-    <div className="shadow-xl card card-side bg-base-100">
+    <div className="w-64 shadow-xl card bg-base-100">
       <figure>
-        <img src={PlaceholderImage} alt="Movie" />
+        <img src={PlaceholderImage} alt="Shoes" />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">{name}</h2>
-        <ul>
-          <li>{email}</li>
-          <li>{course}</li>
-          <li>{batch}</li>
-        </ul>
+        <h2 className="card-title">Shoes!</h2>
+        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <div className="justify-end card-actions">
+          <button className="btn btn-primary">Buy Now</button>
+        </div>
       </div>
     </div>
   );
